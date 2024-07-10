@@ -15,7 +15,7 @@ import { useEffect, useState } from "react";
 export default function Page() {
   // TODO: get user input for room and name
   const room = "quickstart-room";
-  const name = "quickstart-user";
+  const name = `user#${Math.floor(Math.random() * 100)}`;
   const [token, setToken] = useState("");
 
   useEffect(() => {
